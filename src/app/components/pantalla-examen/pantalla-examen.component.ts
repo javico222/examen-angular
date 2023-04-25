@@ -27,6 +27,7 @@ export class PantallaExamenComponent  implements OnInit{
         },
           error:(err)=>{
             console.log(err);
+            this.mensajes.add({ severity: 'error', summary: 'Error', detail: 'Message Content'});
 
         }
       }
